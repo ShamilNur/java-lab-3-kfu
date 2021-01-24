@@ -8,7 +8,7 @@ ITIS Programming JavaLab Course. 3rd semester
  [SimpleJdbcTemplate](https://github.com/ShamilNur/KFU-JavaLab-3/blob/main/04.Web%20Application/src/main/java/ru/kpfu/itis/group903/nurkaev/repositories/SimpleJdbcTemplate.java)
 
 ### 05.Логирование и примитивная безопасность.
- [LoggingFilter and loggs](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/04.Web%20Application/src/main/java/ru/kpfu/itis/group903/nurkaev)
+ [LoggingFilter, loggs and cookie](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/04.Web%20Application/src/main/java/ru/kpfu/itis/group903/nurkaev)
  
 ### 06.PasswordEncoder feat. HttpSession.
  [PasswordEncoder](https://github.com/ShamilNur/KFU-JavaLab-3/blob/main/06.Hotel/src/main/java/ru/kpfu/itis/group903/nurkaev/repositories/UsersRepositoryJdbcImpl.java)
