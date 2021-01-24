@@ -25,7 +25,7 @@ import java.util.Set;
 
 @AutoService(Processor.class)
 @SupportedAnnotationTypes(value = {"HtmlForm", "HtmlInput"})
-@Slf4j
+//@Slf4j
 public class HtmlProcessor extends AbstractProcessor {
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
@@ -36,13 +36,14 @@ public class HtmlProcessor extends AbstractProcessor {
             String path = HtmlProcessor.class.getProtectionDomain().getCodeSource().getLocation().getPath();
             // User.class -> User.html
             path = path.substring(1) + formElement.getSimpleName().toString() + ".html";
+//            path = "C:\\Users\\nurka\\Desktop\\Projects\\2 year\\KFU-JavaLab-3\\10.Annotations_SOURCE\\src\\main\\java\\ru\\kpfu\\itis\\group903\\nurkaev\\Test3.html";
             Path out = Paths.get(path);
-            log.info(out.toString());
-            log.info("types :" + formElement.getEnclosedElements());
+//            log.info(out.toString());
+//            log.info("types :" + formElement.getEnclosedElements());
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(out.toFile()))) {
                 // получаем параметры аннотации HtmlForm
                 HtmlForm htmlForm = formElement.getAnnotation(HtmlForm.class);
-                writer.write("<form action='" + htmlForm.action() + "' method='" + htmlForm.method() + "'/>");
+                writer.write("<form action='" + htmlForm.action() + "' method='" + htmlForm.method() + "'/>\n");
 
                 // получаем параметры аннотаций HtmlInput
                 List<? extends Element> inputAnnotatedElements = formElement.getEnclosedElements();
