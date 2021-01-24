@@ -13,7 +13,7 @@ ITIS Programming JavaLab Course. 3rd semester
 ### 06.PasswordEncoder feat. HttpSession.
  [PasswordEncoder](https://github.com/ShamilNur/KFU-JavaLab-3/blob/main/06.Hotel/src/main/java/ru/kpfu/itis/group903/nurkaev/repositories/UsersRepositoryJdbcImpl.java)
  
- Реализовано в методах signUp(UserDto userDto) и signIn(LoginDto loginDto).
+ Реализовано в методах ```signUp(UserDto userDto)``` и ```signIn(LoginDto loginDto)```.
  
 ### 07.Реализовать EntityManager.
  [EntityManager](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/07.Reflection/src/main/java/ru/kpfu/itis/group903/nurkaev/homework)
