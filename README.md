@@ -5,10 +5,10 @@ ITIS Programming JavaLab Course. 3rd semester
  [Loader](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/03.Loader/src/main/java/ru/kpfu/itis/group903/nurkaev)
  
 ### 04.Реализовать SimpleJdbcTemplate.
- [SimpleJdbcTemplate](https://github.com/ShamilNur/KFU-JavaLab-3/blob/main/04%20Web%20Application/src/main/java/ru/kpfu/itis/group903/nurkaev/repositories/SimpleJdbcTemplate.java)
+ [SimpleJdbcTemplate](https://github.com/ShamilNur/KFU-JavaLab-3/blob/main/04.Web%20Application/src/main/java/ru/kpfu/itis/group903/nurkaev/repositories/SimpleJdbcTemplate.java)
 
 ### 05.Логирование и примитивная безопасность.
- [LoggingFilter and loggs](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/04%20Web%20Application/src/main/java/ru/kpfu/itis/group903/nurkaev)
+ [LoggingFilter, loggs and cookie](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/04.Web%20Application/src/main/java/ru/kpfu/itis/group903/nurkaev)
  
 ### 06.PasswordEncoder feat. HttpSession.
  [PasswordEncoder](https://github.com/ShamilNur/KFU-JavaLab-3/blob/main/06.Hotel/src/main/java/ru/kpfu/itis/group903/nurkaev/repositories/UsersRepositoryJdbcImpl.java)
@@ -19,7 +19,7 @@ ITIS Programming JavaLab Course. 3rd semester
  [EntityManager](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/07.Reflection/src/main/java/ru/kpfu/itis/group903/nurkaev/homework)
  
 ### 08.Сделать Web-приложение со страницами на Freemarker (2-3) страницы.
- [Freemarker]()
+ [Freemarker](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/06.Hotel/src/main/webapp/WEB-INF/ftl)
  
 ### 09.Sockets. Реализовать многопользовательский чат.
  [Chat](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/09.Sockets)
