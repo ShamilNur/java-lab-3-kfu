@@ -34,13 +34,11 @@ public class AuthFilter implements Filter {
         if (cookies != null) {
             boolean containsAuthCookie = false;
             for (Cookie c : cookies) {
-                System.out.println(c.getName());
                 if (c.getName().equals(cookieName) && usersService.getUserSecondByUuid(c.getValue()).orElse(null) != null) {
                     containsAuthCookie = true;
                     break;
                 }
             }
-
             if (!containsAuthCookie) {
                 resp.sendRedirect("/signUp");
                 return;

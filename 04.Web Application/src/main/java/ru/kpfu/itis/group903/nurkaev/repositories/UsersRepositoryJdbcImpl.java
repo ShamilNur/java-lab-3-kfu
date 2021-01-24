@@ -1,6 +1,6 @@
 package ru.kpfu.itis.group903.nurkaev.repositories;
 
-import ru.kpfu.itis.group903.nurkaev.forms.UserForm;
+import ru.kpfu.itis.group903.nurkaev.forms.UserDto;
 import ru.kpfu.itis.group903.nurkaev.models.User;
 import ru.kpfu.itis.group903.nurkaev.models.UserSecond;
 
@@ -94,7 +94,7 @@ public class UsersRepositoryJdbcImpl implements UsersRepository {
     }
 
     @Override
-    public void signUp(UserForm userForm) {
+    public void signUp(UserDto userForm) {
         UserSecond userSecond = UserSecond.builder()
                 .firstName(userForm.getFirstName())
                 .lastName(userForm.getLastName())

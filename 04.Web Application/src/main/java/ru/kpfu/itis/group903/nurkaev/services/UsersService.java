@@ -1,7 +1,7 @@
 package ru.kpfu.itis.group903.nurkaev.services;
 
 import ru.kpfu.itis.group903.nurkaev.exceptions.DuplicateEntryException;
-import ru.kpfu.itis.group903.nurkaev.forms.UserForm;
+import ru.kpfu.itis.group903.nurkaev.forms.UserDto;
 import ru.kpfu.itis.group903.nurkaev.models.User;
 import ru.kpfu.itis.group903.nurkaev.models.UserSecond;
 
@@ -15,7 +15,7 @@ public interface UsersService {
     void delete(User entity);
     void update(User entity);
     Optional<User> findById(Long id);
-    void signUp(UserForm userForm) throws DuplicateEntryException;
+    void signUp(UserDto userForm) throws DuplicateEntryException;
     Optional<UserSecond> findOneByEmail(String email);
     Optional<UserSecond> getUserSecondByUuid(String uuid);
 }

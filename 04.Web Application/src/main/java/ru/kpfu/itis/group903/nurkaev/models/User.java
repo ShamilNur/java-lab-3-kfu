@@ -2,6 +2,7 @@ package ru.kpfu.itis.group903.nurkaev.models;
 
 import lombok.*;
 
+
 /**
  * @author Shamil Nurkaev @nshamil
  * 11-903
@@ -13,7 +14,6 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode
 @Builder
-
 public class User {
     private Long id;
     private String firstName;

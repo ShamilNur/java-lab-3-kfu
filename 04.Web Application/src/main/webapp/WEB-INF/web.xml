@@ -7,41 +7,34 @@
         <filter-name>urlFilter</filter-name>
         <filter-class>ru.kpfu.itis.group903.nurkaev.filters.RequestUrlFilter</filter-class>
     </filter>
-
-    <filter-mapping>
-        <filter-name>urlFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-
     <filter>
         <filter-name>headersFilter</filter-name>
         <filter-class>ru.kpfu.itis.group903.nurkaev.filters.RequestHeadersFilter</filter-class>
     </filter>
-
-    <filter-mapping>
-        <filter-name>headersFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-
     <filter>
         <filter-name>authFilter</filter-name>
         <filter-class>ru.kpfu.itis.group903.nurkaev.filters.AuthFilter</filter-class>
     </filter>
-
-    <filter-mapping>
-        <filter-name>authFilter</filter-name>
-        <url-pattern>/users</url-pattern>
-    </filter-mapping>
-
     <filter>
         <filter-name>loggingFilter</filter-name>
         <filter-class>ru.kpfu.itis.group903.nurkaev.filters.LoggingFilter</filter-class>
     </filter>
 
     <filter-mapping>
+        <filter-name>urlFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>headersFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>authFilter</filter-name>
+        <url-pattern>/users</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
         <filter-name>loggingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-
 
 </web-app>

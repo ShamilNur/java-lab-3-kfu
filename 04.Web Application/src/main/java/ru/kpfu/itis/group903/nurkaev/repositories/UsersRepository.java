@@ -1,6 +1,6 @@
 package ru.kpfu.itis.group903.nurkaev.repositories;
 
-import ru.kpfu.itis.group903.nurkaev.forms.UserForm;
+import ru.kpfu.itis.group903.nurkaev.forms.UserDto;
 import ru.kpfu.itis.group903.nurkaev.models.User;
 import ru.kpfu.itis.group903.nurkaev.models.UserSecond;
 
@@ -10,7 +10,7 @@ import java.util.Optional;
 public interface UsersRepository extends CrudRepository<User> {
     List<User> findAllByAge(Integer age);
 
-    void signUp(UserForm userForm);
+    void signUp(UserDto userForm);
 
     void save(UserSecond entity);
 

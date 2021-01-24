@@ -40,12 +40,10 @@ public class AppConfigServletContextListener implements ServletContextListener {
         hikariConfig.setPassword(properties.getProperty("db.password"));
         hikariConfig.setMaximumPoolSize(Integer.parseInt(properties.getProperty("db.hikari.max-pool-size")));
         HikariDataSource dataSource = new HikariDataSource(hikariConfig);
-
         servletContext.setAttribute("dataSource", dataSource);
 
         UsersRepository usersRepository = new UsersRepositoryJdbcImpl(dataSource);
         UsersService usersService = new UsersServiceImpl(usersRepository);
-
         servletContext.setAttribute("usersService", usersService);
     }
 

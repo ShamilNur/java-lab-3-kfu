@@ -17,7 +17,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserForm {
+public class UserDto {
     private String firstName;
     private String lastName;
     private String email;

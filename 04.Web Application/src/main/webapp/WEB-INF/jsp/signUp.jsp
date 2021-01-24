@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset='UTF-8'>
     <title></title>
@@ -10,7 +10,7 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <script type="text/javascript">
-        <%@include file="/WEB-INF/js/registration.js"%>
+        <%@include file="/static/js/registration.js"%>
     </script>
 </head>
 <body class="d-flex justify-content-center align-items-center flex-column" style="height: 100vh">

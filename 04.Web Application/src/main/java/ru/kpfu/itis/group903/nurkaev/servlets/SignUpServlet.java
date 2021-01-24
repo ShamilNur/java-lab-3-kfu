@@ -1,9 +1,9 @@
 package ru.kpfu.itis.group903.nurkaev.servlets;
 
 import ru.kpfu.itis.group903.nurkaev.exceptions.DuplicateEntryException;
-import ru.kpfu.itis.group903.nurkaev.forms.UserForm;
+import ru.kpfu.itis.group903.nurkaev.forms.UserDto;
 import ru.kpfu.itis.group903.nurkaev.services.UsersService;
-import ru.kpfu.itis.group903.nurkaev.validations.Validator;
+import ru.kpfu.itis.group903.nurkaev.validators.Validator;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
@@ -42,14 +42,13 @@ public class SignUpServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if (Validator.dataIsCorrect(req, resp)) {
             try {
-                UserForm userForm = UserForm.builder()
+                UserDto userForm = UserDto.builder()
                         .firstName(req.getParameter("firstName"))
                         .lastName(req.getParameter("lastName"))
                         .email(req.getParameter("email"))
                         .password(req.getParameter("password"))
                         .uuid(UUID.randomUUID().toString())
                         .build();
-
                 usersService.signUp(userForm);
 
                 String uuid = userForm.getUuid();

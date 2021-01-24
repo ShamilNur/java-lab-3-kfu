@@ -1,4 +1,4 @@
-package ru.kpfu.itis.group903.nurkaev.validations;
+package ru.kpfu.itis.group903.nurkaev.validators;
 
 import org.apache.commons.validator.routines.EmailValidator;
 
