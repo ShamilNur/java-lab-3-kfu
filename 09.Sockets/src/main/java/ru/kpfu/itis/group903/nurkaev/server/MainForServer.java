@@ -1,6 +1,5 @@
 package ru.kpfu.itis.group903.nurkaev.server;
 
-import com.beust.jcommander.JCommander;
 import ru.kpfu.itis.group903.nurkaev.network.Protocol;
 
 /**
@@ -17,8 +16,8 @@ public class MainForServer {
                 .build()
                 .parse(argv);
         EchoServerSocket serverSocket1 = new EchoServerSocket();
-        serverSocket.start(args.port);*/
-
+        serverSocket1.start(args.port);
+*/
         EchoServerSocket serverSocket = new EchoServerSocket();
         serverSocket.start(Protocol.PORT);
     }

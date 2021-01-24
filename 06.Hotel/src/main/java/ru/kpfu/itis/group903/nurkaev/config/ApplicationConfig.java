@@ -11,6 +11,8 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver;
 import ru.kpfu.itis.group903.nurkaev.repositories.*;
@@ -27,7 +29,7 @@ import java.util.Objects;
 @Configuration
 @PropertySource("classpath:db.properties")
 @ComponentScan(basePackages = "ru.kpfu.itis.group903.nurkaev")
-public class ApplicationConfig {
+public class ApplicationConfig implements WebMvcConfigurer {
     private final Environment environment;
 
     @Autowired
@@ -89,7 +91,12 @@ public class ApplicationConfig {
     @Bean
     public FreeMarkerConfigurer freemarkerConfig() {
         FreeMarkerConfigurer configurer = new FreeMarkerConfigurer();
-        configurer.setTemplateLoaderPath("/WEB-INF/ftl/");
+        configurer.setTemplateLoaderPath("/WEB-INF/templates/");
         return configurer;
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
     }
 }

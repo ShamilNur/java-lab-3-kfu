@@ -1,3 +1,4 @@
+<#ftl encoding="UTF-8"/>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -53,7 +54,7 @@
                 <div class="row justify-content-center">
                     <div class="col-sm">
                         <div class="form-group col">
-                            <input type="text" class="form-control" id="confirm_password" name="confirm_password"
+                            <input type="text" class="form-control" id="confirmPassword" name="confirmPassword"
                                    placeholder="Подтверждение пароля" required>
                         </div>
                     </div>

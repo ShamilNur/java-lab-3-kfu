@@ -1,6 +1,5 @@
 package ru.kpfu.itis.group903.nurkaev.client;
 
-import com.beust.jcommander.JCommander;
 import ru.kpfu.itis.group903.nurkaev.network.Protocol;
 
 import java.net.InetAddress;

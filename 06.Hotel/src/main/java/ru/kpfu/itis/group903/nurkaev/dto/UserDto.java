@@ -1,9 +1,6 @@
 package ru.kpfu.itis.group903.nurkaev.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.apache.commons.validator.routines.EmailValidator;
 
 /**
@@ -14,6 +11,7 @@ import org.apache.commons.validator.routines.EmailValidator;
 
 @Data
 @Builder
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDto {

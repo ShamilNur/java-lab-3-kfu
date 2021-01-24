@@ -1,3 +1,4 @@
+<#ftl encoding="UTF-8"/>
 <html lang="ru">
 <head>
     <meta charset='UTF-8'>
@@ -6,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Авторизация</title>
 
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/signUp.css">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" href="/static/css/signIn.css">
+    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/css/signUp.css">
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/signIn.css">
 </head>
 
 <body>

@@ -3,6 +3,8 @@ package ru.kpfu.itis.group903.nurkaev.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.kpfu.itis.group903.nurkaev.dto.UserDto;
@@ -24,12 +26,12 @@ public class SignUpController {
         this.usersService = usersService;
     }
 
-    @RequestMapping(value = "/signUp", method = RequestMethod.GET)
+    @GetMapping(value = "/signUp")
     public String getSignUpPage() {
         return "signUp";
     }
 
-    @RequestMapping(value = "/signUp", method = RequestMethod.POST)
+    @PostMapping(value = "/signUp")
     public String signUpUser(Model model, UserDto userDto) {
         if (UserDto.validate(userDto)) {
             try {
