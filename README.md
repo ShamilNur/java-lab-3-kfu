@@ -19,7 +19,7 @@ ITIS Programming JavaLab Course. 3rd semester
  [EntityManager](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/07.Reflection/src/main/java/ru/kpfu/itis/group903/nurkaev/homework)
  
 ### 08.Сделать Web-приложение со страницами на Freemarker (2-3) страницы.
- [Freemarker](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/06.Hotel/src/main/webapp/WEB-INF/ftl)
+ [Freemarker](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/06.Hotel/src/main/webapp/WEB-INF/templates)
  
 ### 09.Sockets. Реализовать многопользовательский чат.
  [Chat](https://github.com/ShamilNur/KFU-JavaLab-3/tree/main/09.Sockets)
