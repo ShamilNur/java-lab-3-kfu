@@ -1,0 +1,482 @@
+html,
+body {
+    height: 100%;
+    font-family: "Taviraj", serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    background: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #081624;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.spad {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.main-header-rooms {
+    background-image: url(/static/img/rooms-bg.jpg);
+    max-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hotel-logo {
+    color: #fff;
+    font-size: 28px;
+}
+
+.hotel-logo:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-header {
+    background-image: url(/static/img/slider-1.jpg);
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-header-news {
+    background-image: url(/static/img/services-bg.jpg);
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+li a {
+    color: #fff;
+    font-size: 28px;
+}
+
+li a:hover {
+    color: #ae9548;
+    text-decoration: none;
+}
+
+.main-flex {
+    display: flex;
+    min-height: 1200px;
+}
+
+.main-flex-rooms {
+    display: flex;
+    min-height: 600px;
+}
+
+.second-flex {
+    margin: auto;
+    padding-top: 100px;
+}
+
+.main-title {
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 5em;
+}
+
+/*Header*/
+
+.header-section {
+    background: #353535;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.top-phone-num span {
+    color: #fff;
+    font-size: 28px;
+}
+
+/*Room Availability*/
+
+.room-check {
+    padding-bottom: 50px;
+}
+
+.check-form {
+    padding: 55px 60px 61px;
+    border: 2px solid #AE9548;
+    margin-bottom: 40px;
+}
+
+.check-form h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #081624;
+    margin-bottom: 40px;
+}
+
+.check-form .datepicker {
+    margin-bottom: 52px;
+}
+
+.check-form .datepicker .date-select {
+    display: inline-block;
+    position: relative;
+    margin-right: 56px;
+}
+
+.check-form .datepicker .date-select.to {
+    margin-right: 0;
+}
+
+.check-form .datepicker .date-select p {
+    font-size: 14px;
+    color: #081624;
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+
+.check-form .datepicker .date-select input,
+.check-form .room-quantity .single-quantity select {
+    font-size: 14px;
+    font-weight: 600;
+    color: #242424;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    opacity: 0.5;
+    border: none;
+    height: 50px;
+    border-bottom: 1px solid #888888;
+    width: 170px;
+    display: block;
+}
+
+.check-form .room-quantity {
+    margin-bottom: 34px;
+}
+
+.check-form .room-quantity .single-quantity p {
+    font-size: 14px;
+    color: #081624;
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+
+.check-form button {
+    font-size: 18px;
+    color: #081624;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.check-form button i {
+    line-height: 16px;
+    margin-top: 6px;
+    position: absolute;
+    right: -45px;
+    bottom: 7px;
+    font-size: 31px;
+    color: #AE9548;
+}
+
+.about-room h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+    color: #242424;
+    margin-bottom: 26px;
+}
+
+.room-section {
+    padding-bottom: 0;
+}
+
+.rooms-page-item {
+    -webkit-box-shadow: 2px 15px 75px 6px #EBEBEB;
+    box-shadow: 2px 15px 75px 6px #EBEBEB;
+    margin-bottom: 100px;
+}
+
+.rooms-page-item .room-pic-slider .single-room-pic img {
+    height: 379px;
+}
+
+.rooms-page-item .room-pic-slider.owl-carousel .owl-nav button[type=button] {
+    color: #AE9548;
+    font-size: 26px;
+    height: 69px;
+    width: 52px;
+    background: #353535;
+    line-height: 72px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-34.5px);
+    transform: translateY(-34.5px);
+}
+
+.rooms-page-item .room-pic-slider.owl-carousel .owl-nav button[type=button].owl-next {
+    left: auto;
+    right: 0;
+}
+
+.rooms-page-item .room-text {
+    padding-top: 0;
+    padding-right: 30px;
+    padding-bottom: 135px;
+}
+
+.rooms-page-item .room-text .room-title {
+    overflow: hidden;
+    margin-bottom: 18px;
+    padding-right: 40px;
+}
+
+.rooms-page-item .room-text .room-title h2 {
+    float: left;
+    font-size: 36px;
+    color: #2d220f;
+}
+
+.rooms-page-item .room-text .room-title .room-price {
+    float: right;
+    position: relative;
+}
+
+.rooms-page-item .room-text .room-title .room-price h2 {
+    font-size: 36px;
+    color: #081624;
+    font-family: "Taviraj", sans-serif;
+    font-weight: 400;
+}
+
+.rooms-page-item .room-text .room-desc {
+    margin-bottom: 20px;
+}
+
+.rooms-page-item .room-text .room-desc p {
+    font-size: 16px;
+    color: #242424;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+}
+
+.primary-btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 64px 15px 34px;
+    color: #081624;
+    font-family: "Taviraj", sans-serif;
+    text-transform: uppercase;
+    border: 2px solid #AE954B;
+    position: relative;
+}
+/*Follow Instagram*/
+
+
+
+.follow-instagram {
+    background: #f7f7f7;
+    padding: 23px 0;
+}
+
+.follow-instagram h2 {
+    font-size: 36px;
+    color: #242424;
+    line-height: 72px;
+    font-weight: 400;
+}
+
+/*Footer Room Pic*/
+
+.footer-room-pic img {
+    width: 25%;
+}
+
+/*Footer*/
+
+.footer-info {
+    background: #353535;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-name {
+    color: #AE9548;
+}
+
+.contact-desc {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+}
+
+.side-bar {
+    padding-bottom: 75px;
+}
+
+.side-bar .recent-post {
+    margin-bottom: 46px;
+}
+
+.side-bar .recent-post h4 {
+    font-size: 24px;
+    color: #242424;
+    margin-bottom: 35px;
+}
+
+.side-bar .recent-post .single-recent-post {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.side-bar .recent-post .single-recent-post .recent-pic {
+    float: left;
+    margin-right: 20px;
+}
+
+.side-bar .recent-post .single-recent-post .recent-text h5 {
+    font-size: 18px;
+    color: #242424;
+    line-height: 24px;
+    margin-bottom: 9px;
+}
+
+.side-bar .recent-post .single-recent-post .recent-text .recent-time {
+    position: relative;
+    display: inline-block;
+}
+
+.side-bar .recent-post .single-recent-post .recent-text .recent-time i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #ae9548;
+    font-size: 18px;
+}
+
+.side-bar .recent-post .single-recent-post .recent-text .recent-time span {
+    color: #242424;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-left: 23px;
+}
+
+.side-bar .tags-item h4 {
+    font-size: 24px;
+    color: #242424;
+    margin-bottom: 24px;
+}
+
+.side-bar .tags-item .tag-links .tag-buttons {
+    color: #ae9548;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #ae9548;
+    border-radius: 50px;
+    padding: 2px 12px;
+    margin-right: 6px;
+    margin-bottom: 9px;
+}
+
+.blog-post .single-blog-post {
+    -webkit-box-shadow: 2px 15px 75px 6px #EBEBEB;
+    box-shadow: 2px 15px 75px 6px #EBEBEB;
+    margin-bottom: 50px;
+}
+
+.blog-post .single-blog-post .blog-text {
+    padding: 25px 40px 25px 30px;
+}
+
+.blog-post .single-blog-post .blog-text h4 {
+    color: #2d220f;
+    letter-spacing: 0.2px;
+    margin-bottom: 13px;
+}
+
+.blog-post .single-blog-post .blog-text .blog-widget {
+    margin-bottom: 20px;
+}
+
+.blog-post .single-blog-post .blog-text .blog-widget .blog-info {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+.blog-post .single-blog-post .blog-text .blog-widget .blog-info span {
+    color: #242424;
+    display: inline-block;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.blog-post .single-blog-post p {
+    font-size: 14px;
+    color: #242424;
+    line-height: 26px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.blog-post .single-blog-post a {
+    display: inline-block;
+    color: #081624;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.blog-post .single-blog-post a i {
+    font-size: 22px;
+    color: #ae9548;
+    position: absolute;
+    right: -32px;
+    top: -1px;
+}

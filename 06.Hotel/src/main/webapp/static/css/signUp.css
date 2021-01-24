@@ -1,0 +1,37 @@
+.form-group {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.form-group .container {
+    padding: 55px 60px 61px;
+    border: 2px solid #AE9548;
+    margin-bottom: 40px;
+}
+
+.form-check-input {
+    position: relative;
+    margin-left: 0;
+}
+
+.btn-outline-primary {
+    color: #AE9548;
+    background-color: transparent;
+    background-image: none;
+    border-color: #AE9548;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #AE9548;
+    border-color: #AE9548;
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: #AE9548;
+    background-color: transparent;
+}
+
+.d-flex {
+    height: 100vh;
+}
